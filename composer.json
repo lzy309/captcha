@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hyperf\\Captcha\\": "src/"
+            "Lizhaoyang\\Captcha\\": "src/"
         }
     },
     "extra": {
