@@ -1,0 +1,35 @@
+{
+    "name": "hyperf/captcha",
+    "description": "A captcha componet for hyperf .",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "captcha"
+    ],
+    "require": {
+        "php": ">=7.2",
+        "psr/container": "^1.0",
+        "hyperf/contract": "~1.1.0",
+        "hyperf/utils": "~1.1.0",
+        "hyperf/session": "~1.1.0"
+    },
+    "require-dev": {
+        "hyperf/di": "~1.1.0",
+        "phpunit/phpunit": "^7.0.0",
+        "friendsofphp/php-cs-fixer": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\Captcha\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\Captcha\\ConfigProvider"
+        }
+    }
+}
