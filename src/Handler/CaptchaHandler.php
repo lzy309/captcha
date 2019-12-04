@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Hyperf\Captcha\Handler;
+namespace Lizhaoyang\Captcha\Handler;
 
 
 use Hyperf\Contract\ConfigInterface;

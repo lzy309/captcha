@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hyperf\Captcha;
+namespace Lizhaoyang\Captcha;
 
 
 use Psr\Http\Message\ResponseInterface;

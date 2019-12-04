@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Hyperf\Captcha;
+namespace Lizhaoyang\Captcha;
 
 
-use Hyperf\Captcha\Handler\CaptchaHandler;
+use Lizhaoyang\Captcha\Handler\CaptchaHandler;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\SessionInterface;
 use Hyperf\HttpMessage\Stream\SwooleStream;
