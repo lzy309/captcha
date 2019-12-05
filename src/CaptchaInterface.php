@@ -9,7 +9,7 @@ use Psr\Http\Message\ResponseInterface;
 
 interface CaptchaInterface
 {
-    public function create(array $config = null): string;
+    public function create(): string;
 
     public function setUseCurve(bool $flag = true): CaptchaInterface;
 

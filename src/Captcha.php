@@ -38,9 +38,9 @@ class Captcha implements CaptchaInterface
         $this->handler = new CaptchaHandler($this->config, $session);
     }
 
-    public function create(array $config = null): string
+    public function create(): string
     {
-        return $this->handler->create($config);
+        return $this->handler->create();
     }
 
     public function check(string $code): bool

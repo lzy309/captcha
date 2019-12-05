@@ -4,7 +4,7 @@
 用于生产验证码，支持Hyperf框架，使用Composer安装,使用该组件需开启hyperf框架中的session组件
 
 ```
-composer require lzy309/cpatcha
+composer require lizhaoyang/cpatcha
 ```
 
 **配置定义**
@@ -29,9 +29,17 @@ return [
 
 ```
 // 生产二维码
-$config = $this->container->get(ConfigInterface::class);
-$captcha = new Captcha($config, $this->container->get(SessionInterface::class));
-return $captcha->create($config->get('captcha', []));
+
+/**
+ * @Inject
+ * @var ContainerInterface
+ */
+protected $container;
+
+
+
+$captcha = new Captcha($this->container->get(ConfigInterface::class), $this->container->get(SessionInterface::class));
+return $captcha->create();
 
 // 验证二维码
 $captcha->check($code);
