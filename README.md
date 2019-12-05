@@ -4,7 +4,7 @@
 用于生产验证码，支持Hyperf框架，使用Composer安装,使用该组件需开启hyperf框架中的session组件
 
 ```
-composer require lzy309/cpatcha
+composer require lizhaoyang/captcha
 ```
 
 **配置定义**
