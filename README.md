@@ -4,7 +4,7 @@
 用于生产验证码，支持Hyperf框架，使用Composer安装,使用该组件需开启hyperf框架中的session组件
 
 ```
-composer require lizhaoyang/cpatcha
+composer require lizhaoyang/captcha
 ```
 
 **配置定义**
@@ -28,20 +28,17 @@ return [
 **直接使用**
 
 ```
-// 生产二维码
-
 /**
  * @Inject
  * @var ContainerInterface
  */
 protected $container;
 
-
-
+// 生产验证码
 $captcha = new Captcha($this->container->get(ConfigInterface::class), $this->container->get(SessionInterface::class));
 return $captcha->create();
 
-// 验证二维码
+// 验证
 $captcha->check($code);
 ```
 
