@@ -28,12 +28,12 @@ return [
 **直接使用**
 
 ```
-// 生产二维码
+// 生产验证码
 $config = $this->container->get(ConfigInterface::class);
 $captcha = new Captcha($config, $this->container->get(SessionInterface::class));
 return $captcha->create($config->get('captcha', []));
 
-// 验证二维码
+// 验证
 $captcha->check($code);
 ```
 
