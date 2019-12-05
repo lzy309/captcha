@@ -31,10 +31,6 @@ class Captcha implements CaptchaInterface
      */
     private $config;
 
-    /**
-     * @var ResponseInterface
-     */
-    private $response;
 
     public function __construct(ConfigInterface $config, SessionInterface $session)
     {
