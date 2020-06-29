@@ -9,7 +9,10 @@
     ],
     "require": {
         "php": ">=7.2",
-        "psr/container": "^1.0"
+        "psr/container": "^1.0",
+        "hyperf/contract": "~1.1.0",
+        "hyperf/utils": "~1.1.0",
+        "hyperf/session": "~1.1.0"
     },
     "require-dev": {
         "hyperf/di": "~1.1.0",
@@ -23,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.1.2-dev"
+            "dev-master": "1.1.1-dev"
         },
         "hyperf": {
             "config": "Hyperf\\Captcha\\ConfigProvider"
